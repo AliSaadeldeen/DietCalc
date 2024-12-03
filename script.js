@@ -69,7 +69,7 @@ const colorClasses = {
   // Create equations section with colorized equations
 // Create equations section
 let equations = `
-    <div class="calculation"><span class="result color-default">IBW</span><span class="label color-equal"> = </span>${height}<span class="label color-equal"> - </span>100<span class="label color-equal"> = </span><span class="result color-gram">${IBW}</span> kg</div>`;
+    <div class="calculation"><span class="result color-default">IBW</span><span class="label color-equal"> = </span><span class="result color-multiply">${height}</span><span class="label color-equal"> - </span><span class="result color-multiply">100</span><span class="label color-equal"> = </span><span class="result color-gram">${IBW}</span> kg</div>`;
 
 if (ABW !== IBW) {
     equations += 
