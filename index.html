@@ -10,13 +10,13 @@
     <div class="container">
         <!-- Input Form Section -->
         <div id="form-section">
-            <h1>Nutrition Calculator</h1>
+            <h1 id="whatever">Nutrition Calculator</h1>
             <form id="calc-form">
                 <label for="height">Height (cm): </label>
-                <input type="number" id="height" required>
+                <input type="number" id="height" min="101" required>
 
                 <label for="weight">Weight (kg): </label>
-                <input type="number" id="weight" required>
+                <input type="number" id="weight" min="1" required>
 
                 <button type="submit">Calculate</button>
             </form>
@@ -31,7 +31,6 @@
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
