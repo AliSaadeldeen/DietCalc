@@ -28,7 +28,7 @@ if (titleElement) {
     const sat_fat = calories * 0.05 / 9;
     const pufa = calories * 0.1 / 9;
     const mufa = calories * 0.14 / 9;
-    const fat = calories * 0.3 / 9;
+    const fat = calories * 0.29 / 9;
 
   // Define the color classes
 const colorClasses = {
@@ -83,7 +83,7 @@ equations += `
     <div class="calculation"><span class="label color-default">SFA</span><span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(calories)}</span> <span class="label color-equal"> x </span><span class="result color-multiply">5%</span> <span class="label color-equal"> = </span><span class="result color-kcal">${Math.round(sat_fat*9)}</span> kcal <span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(sat_fat*9)}</span> <span class="label color-equal"> / </span><span class="result color-multiply">9</span> <span class="label color-equal"> = </span><span class="result color-gram">${Math.round(sat_fat)}</span> g</div>
     <div class="calculation"><span class="label color-default">PUFA</span><span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(calories)}</span> <span class="label color-equal"> x </span><span class="result color-multiply">10%</span> <span class="label color-equal"> = </span><span class="result color-kcal">${Math.round(pufa*9)}</span> kcal <span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(pufa*9)}</span> <span class="label color-equal"> / </span><span class="result color-multiply">9</span> <span class="label color-equal"> = </span><span class="result color-gram">${Math.round(pufa)}</span> g</div>
     <div class="calculation"><span class="label color-default">MUFA</span><span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(calories)}</span> <span class="label color-equal"> x </span><span class="result color-multiply">14%</span> <span class="label color-equal"> = </span><span class="result color-kcal">${Math.round(mufa*9)}</span> kcal <span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(mufa*9)}</span> <span class="label color-equal"> / </span><span class="result color-multiply">9</span> <span class="label color-equal"> = </span><span class="result color-gram">${Math.round(mufa)}</span> g</div>
-    <div class="calculation"><span class="label color-default">Fat</span><span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(calories)}</span> <span class="label color-equal"> x </span><span class="result color-multiply">30%</span> <span class="label color-equal"> = </span><span class="result color-kcal">${Math.round(fat*9)}</span> kcal <span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(fat*9)}</span> <span class="label color-equal"> / </span><span class="result color-multiply">9</span> <span class="label color-equal"> = </span><span class="result color-gram">${Math.round(fat)}</span> g</div>`
+    <div class="calculation"><span class="label color-default">Fat</span><span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(calories)}</span> <span class="label color-equal"> x </span><span class="result color-multiply">29%</span> <span class="label color-equal"> = </span><span class="result color-kcal">${Math.round(fat*9)}</span> kcal <span class="label color-equal"> = </span><span class="result color-multiply">${Math.round(fat*9)}</span> <span class="label color-equal"> / </span><span class="result color-multiply">9</span> <span class="label color-equal"> = </span><span class="result color-gram">${Math.round(fat)}</span> g</div>`
 document.getElementById("equations").innerHTML = equations;
 
   
@@ -206,6 +206,7 @@ optimizeServings();
 
     // Hide the form after calculation
     document.getElementById("calc-form").style.display = "none";
+    document.getElementById("whatever").style.display = "none";
     document.getElementById("output-section").style.display = "block";
     
     // Add a "Try Again" button dynamically
@@ -228,6 +229,7 @@ optimizeServings();
     document.getElementById("try-again").addEventListener("click", function () {
         document.getElementById("calc-form").reset(); // Reset the form
         document.getElementById("calc-form").style.display = "flex"; // Show the form
+        document.getElementById("whatever").style.display = "flex";
         document.getElementById("output-section").style.display = "none"; // Hide the output
         document.getElementById("title").style.display = "block"; // Show the title
     });
