@@ -65,8 +65,7 @@ const colorClasses = {
     }).join('');
   }
   
-  // Create equations section with colorized equations
-  // Create equations section with colorized equations
+  
 // Create equations section
 let equations = `
     <div class="calculation"><span class="result color-default">IBW</span><span class="label color-equal"> = </span><span class="result color-multiply">${height}</span><span class="label color-equal"> - </span><span class="result color-multiply">100</span><span class="label color-equal"> = </span><span class="result color-gram">${IBW}</span> kg</div>`;
@@ -116,7 +115,7 @@ document.getElementById("equations").innerHTML = equations;
         let totalFat = starchServings * starch.fat + beansServings * beans.fat + milkServings * milk.fat + vegServings * vegetables.fat + meatServings * meat.fat + fatServings * fatType.fat;
         let totalCalories = starchServings * starch.calories + beansServings * beans.calories + milkServings * milk.calories + fruitServings * fruits.calories + vegServings * vegetables.calories + meatServings * meat.calories + fatServings * fatType.calories;
 
-        // Tweak the values for balance
+      
 // Iteratively adjust servings to match calorie and macronutrient goals
 function optimizeServings() {
     let tolerance = 10; // Tolerance for calories in kcal
