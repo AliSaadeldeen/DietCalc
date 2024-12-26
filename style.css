@@ -46,31 +46,15 @@ body::before {
   margin: auto;
 }
 
-@media (max-width: 768px) {
-  h1 {
-      font-size: 25px;
-  }
-  input, button {
-      font-size: 14px;
-      padding: 6px;
-  }
-  #nutrition-table {
-    margin-top: 20px;
-    display: table;
-    width: 100%;
-    font-size: 75%;
-    background-color: #333;
-    border-collapse: collapse;
-  }
-  
-  
-}
+
 
 
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
+
+
 
 form {
   display: flex;
@@ -120,7 +104,8 @@ button#try-again:hover {
 
 
 #nutrition-table {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 90%;
   display: table;
   width: 100%;
   background-color: #333;
@@ -177,4 +162,75 @@ button#try-again:hover {
 
 .color-equal {
   color: #e20f59; /* Light gray for = */
+}
+
+
+
+
+@media (max-height: 771px) {
+  #nutrition-table {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+@media (max-width: 509px) {
+  #nutrition-table {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 490px) {
+  #nutrition-table {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 470px) {
+  #nutrition-table {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 451px) {
+  #nutrition-table {
+    font-size: 73%;
+  }
+}
+
+@media (max-width: 440px) {
+  .calculation {
+    font-size: 70%;
+  }
+  #nutrition-table {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 390px) {
+  #nutrition-table {
+    font-size: 60%;
+  }
+}
+
+
+
+
+
+@media (max-width: 373px) {
+  h1 {
+      font-size: 25px;
+  }
+  input, button {
+      font-size: 14px;
+      padding: 6px;
+  }
+  #nutrition-table {
+    font-size: 50%;
+  }
+  
+  
 }
