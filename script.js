@@ -93,7 +93,7 @@ document.getElementById("equations").innerHTML = equations;
     function calculateNutrition() {
         // Updated constants for each type (g per serving)
         const starch = { carb: 15, protein: 3, fat: 0, calories: 80 };
-        const beans = { carb: 15, protein: 7, fat: 2, calories: 125 };
+        const beans = { carb: 15, protein: 7, fat: 1, calories: 125 };
         const milk = { carb: 15, protein: 8, fat: 8, calories: 160 };
         const fruits = { carb: 15, protein: 0, fat: 0, calories: 60 };
         const vegetables = { carb: 5, protein: 2, fat: 0, calories: 25 };
