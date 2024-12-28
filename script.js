@@ -118,7 +118,7 @@ document.getElementById("equations").innerHTML = equations;
       
 // Iteratively adjust servings to match calorie and macronutrient goals
 function optimizeServings() {
-    let tolerance = 100; // Tolerance for calories in kcal
+    let tolerance = 80; // Tolerance for calories in kcal
     let maxIterations = 100; // Maximum iterations to prevent infinite loops
     let iteration = 0;
 
