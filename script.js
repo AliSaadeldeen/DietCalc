@@ -118,11 +118,11 @@ document.getElementById("equations").innerHTML = equations;
       
 // Iteratively adjust servings to match calorie and macronutrient goals
 function optimizeServings() {
-    let tolerance = 10; // Tolerance for calories in kcal
+    let tolerance = 100; // Tolerance for calories in kcal
     let maxIterations = 100; // Maximum iterations to prevent infinite loops
     let iteration = 0;
 
-    while (Math.abs(totalCalories - calories) > tolerance && iteration < maxIterations) {
+    while (Math.abs(totalCalories - calories) > tolerance && Math.abs(totalCarbs - carb) > 10 && Math.abs(totalProtein - protein) > 10 && Math.abs(totalFat - fat) >= 20 && iteration < maxIterations) {
         iteration++;
 
         // Adjust based on macronutrient deficits
